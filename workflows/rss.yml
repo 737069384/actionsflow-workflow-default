@@ -3,7 +3,7 @@ on:
     url: https://hnrss.org/newest?points=300&count=3
 jobs:
   job1:
-    name:node
+    name: node
     steps:
       - name: step1
         uses: actionsflow/axios@v1
