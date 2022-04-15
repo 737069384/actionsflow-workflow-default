@@ -2,14 +2,17 @@ on:
   rss:
     url: https://hnrss.org/newest?points=300&count=3
 jobs:
-  request:
-    name: Make a HTTP Request
-    runs-on: ubuntu-latest
+  job1:
+    name:node
     steps:
       - name: step1
         uses: actionsflow/axios@v1
         run: |
           node -V
+  request:
+    name: Make a HTTP Request
+    runs-on: ubuntu-latest
+    steps:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
