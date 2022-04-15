@@ -9,5 +9,10 @@ jobs:
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
-          url: https://api2.pushdeer.com/message/push?pushkey=PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF&text=要发送的内容
+          url: https://api2.pushdeer.com/message/push
           method: POST
+          body: |
+            {
+              "pushkey":"PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF", 
+              "text": "ok",
+            }
