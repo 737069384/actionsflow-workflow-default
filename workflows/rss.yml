@@ -7,11 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Outputs
-        with:
-          url: https://api2.pushdeer.com/message/push
-          method: POST
-          body: |
-            {
-              "pushkey":"PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF", 
-              "text": "test"
-            }
+        run：
+          echo ok
