@@ -7,5 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Outputs
-        run: |
-          echo ok
+        with:
+          url: https://api2.pushdeer.com/message/push?pushkey=PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF&text=要发送的内容
+          method: POST
