@@ -1,17 +1,14 @@
-on:
-  rss:
-    url: https://hnrss.org/newest?points=300&count=3
 jobs:
   print:
     name: Print
     runs-on: ubuntu-latest
     steps:
       - name: Print Outputs
-        env:
-          title: ${{on.rss.outputs.title}}
-          contentSnippet: ${{on.rss.outputs.contentSnippet}}
-          link: ${{on.rss.outputs.link}}
-        run: |
-          echo title: $title
-          echo contentSnippet: $contentSnippet
-          echo link: $link
+        with:
+          url: https://api2.pushdeer.com/message/push
+          method: POST
+          body: |
+            {
+              "pushkey":"PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF", 
+              "text": "test"
+            }
