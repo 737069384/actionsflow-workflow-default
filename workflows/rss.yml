@@ -12,3 +12,6 @@ jobs:
               "pushkey":"PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF", 
               "text": "test"
             }
+      - name: p2
+        run:
+          echo ok
