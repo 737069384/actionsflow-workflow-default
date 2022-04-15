@@ -9,7 +9,7 @@ jobs:
       - name: step1
         uses: actionsflow/axios@v1
         run: |
-        node -V
+          node -V
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
