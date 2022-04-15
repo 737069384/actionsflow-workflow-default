@@ -4,6 +4,7 @@ on:
 jobs:
   job1:
     name: node
+    runs-on: ubuntu-latest
     steps:
       - name: step1
         uses: actionsflow/axios@v1
