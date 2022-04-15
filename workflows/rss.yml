@@ -1,12 +1,13 @@
 on:
   rss:
-    url: https://hnrss.org/newest?points=300
+    url: https://hnrss.org/newest?points=300&count=3
 jobs:
-  print:
-    name: Print
+  request:
+    name: Make a HTTP Request
     runs-on: ubuntu-latest
     steps:
-      - name: Print Outputs
+      - name: Make a HTTP Request
+        uses: actionsflow/axios@v1
         with:
           url: https://api2.pushdeer.com/message/push?pushkey=PDU8939TluIn851UVYFudK7InUZ2DULxD7FwgdIF&text=要发送的内容
           method: POST
