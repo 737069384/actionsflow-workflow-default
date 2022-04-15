@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        node -v
+        node -V
       - name: Make a HTTP Request
         uses: actionsflow/axios@v1
         with:
